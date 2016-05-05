@@ -84,15 +84,18 @@ function longestWord(string) {
     return word;
 }
 
-
-
 // Question 8
 //Write a function filterLongWords that takes an array of words and a number i and returns the array of words 
 //that are longer than i characters long.
-function filterLongWords () {
-  //
-}
-
+function filterLongWords (words,n) {
+  LongerThanI = [];
+  for (var i = 0; i < words.length; i++) {
+  	if (words[i].length > n) {
+  		LongerThanI.push(words[i]);
+  	}
+  }
+  		return (LongerThanI);
+  	}
 
 // Bonus 1
 // (hint: `prototype`)
